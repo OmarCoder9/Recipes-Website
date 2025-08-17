@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: url("../assets/background.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff8f0;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0 0 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.3rem;
+  width: 100px;
+}
+
+.btn-yes {
+  background-color: #4e7d4b;
+  color: white;
+}
+
+.btn-yes:hover {
+  background-color: #3f663d;
+}
+
+.btn-cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #b3b3b3;
+}

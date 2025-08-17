@@ -1,0 +1,36 @@
+body {
+  background-color: #f4f6f9;
+  /* background: url("../assets/background.png") no-repeat center center/cover; */
+}
+h1 {
+  font-weight: bold;
+}
+table img {
+  width: 80px;
+  border-radius: 8px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.btn-custom {
+  background: #ff7043;
+  color: white;
+}
+.btn-custom:hover {
+  background: #e64a19;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0ea5e9;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.back-link:hover {
+  text-decoration: underline;
+}

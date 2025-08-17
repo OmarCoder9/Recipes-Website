@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+}
+.product-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0ea5e9;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+.recipe-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.recipe-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.recipe-info h1 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.recipe-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.stat {
+  background: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.diet-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.diet-tag {
+  background: #0ea5e9;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.recipe-summary {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.recipe-summary h3 {
+  margin: 0 0 12px;
+  color: #0f172a;
+}
+.dish-types {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.dish-type {
+  background: #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .recipe-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

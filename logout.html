@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Confirmation</title>
+    <link rel="stylesheet" href="./styles/logout.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Log Out</h2>
+      <p>Are you sure you want to log out?</p>
+
+      <div>
+        <button class="btn btn-yes" onclick="logout()">Yes</button>
+        <button class="btn btn-cancel" onclick="cancelLogout()">Cancel</button>
+      </div>
+    </div>
+
+    <script>
+      function logout() {
+        alert("You have been logged out.");
+        window.location.href = "login.html";
+      }
+      function cancelLogout() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
