@@ -128,6 +128,7 @@ footer {
 }
 .footer-column ul {
     list-style: none;
+    padding-left: 0px;
 }
 .footer-column p{
     margin-bottom: 20px;
@@ -197,4 +198,5 @@ footer {
         border-radius: 30px;
         margin: 5px 0;
     }
+
 }
