@@ -43,7 +43,8 @@ nav {
   transition: 1s ease;
 }
 .nav-links a:hover {
-  color: #e1d6ae;
+  /* color: #e1d6ae; */
+  color: rgba(225, 214, 174, 0.7);
 }
 .login {
   display: flex;

@@ -26,6 +26,20 @@ body {
     opacity: 0.3;
   }
 }
+
+@media (max-width: 450px) {
+  .carousel:hover {
+    .slide .btn {
+      display: inline-block;
+      scale: 1.1;
+      left: 13%;
+      top: 450px;
+    }
+    .slide img {
+      opacity: 0.3;
+    }
+  }
+}
 .carousel {
   margin: 0px 60px;
   position: relative;
