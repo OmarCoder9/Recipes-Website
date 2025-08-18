@@ -92,3 +92,27 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 250px;
+  padding: 15px 20px;
+  background-color: rgb(130, 2, 5);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+#toast.success {
+  background-color: #4caf50;
+}

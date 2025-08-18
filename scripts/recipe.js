@@ -93,7 +93,6 @@ async function init() {
   }
 
   const recipes = await fetchRecipeData();
-  console.log(recipes);
   if (!recipes) {
     document.getElementById("error").style.display = "block";
     document.getElementById("loading").style.display = "none";

@@ -50,6 +50,7 @@ document.getElementById("signupBtn").addEventListener("click", function (e) {
     "Registration successful! You will be redirected to recipes page.",
     "success"
   );
+  localStorage.setItem("loggedIn", true);
   setTimeout(() => {
     window.location.href = "recipes.html";
   }, 2000);

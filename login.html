@@ -14,19 +14,26 @@
 
       <div class="input-group">
         <label>Email</label>
-        <input type="email" placeholder="Enter your email" />
+        <input id="email" type="email" placeholder="Enter your email" />
       </div>
 
       <div class="input-group">
         <label>Password</label>
-        <input type="password" placeholder="Enter your password" />
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password"
+        />
       </div>
 
-      <button>LOG IN</button>
+      <button onclick="login()">LOG IN</button>
 
       <div class="signup-link">
         Don't have an account? <a href="signup.html">Sign Up</a>
       </div>
     </div>
+    <div id="toast"></div>
+
+    <script src="./scripts/login.js"></script>
   </body>
 </html>

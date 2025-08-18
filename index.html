@@ -1,238 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ratatouille</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/headerAndFooter.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/headerAndFooter.css" />
     <link rel="icon" href="./assets/logo.png" type="image/png" />
-
-</head>
-<body>
-
-    <!-- <--NavBar-->
-
+  </head>
+  <body>
+    <!-- NavBar-->
     <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo"><img src="./assets/logo.png" alt="logo"></a>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="recipes.html"><i class="fa-solid fa-utensils"></i> Recipes</a></li>
-                    <li id=""><a href="#Info"><i class="fa-solid fa-info"></i> Info</a></li>
-                </ul>
-                <ul class="login">
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="signup.html">Register</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <a href="/index.html" class="logo"
+            ><img src="./assets/logo.png" alt="logo"
+          /></a>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="/recipes.html"
+                ><i class="fa-solid fa-utensils"></i> Recipes</a
+              >
+            </li>
+            <li id="">
+              <a href="#Info"><i class="fa-solid fa-info"></i> Info</a>
+            </li>
+            <li id="login-link"><a href="login.html">Log In</a></li>
+            <li id="signup-link"><a href="signup.html">Register</a></li>
+            <li id="admin-link"><a href="admin.html">Admin</a></li>
+            <li id="logout-link"><a href="logout.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-<!-- <--Slider-->
+    <!-- Slider-->
 
     <div class="slider-container">
-        <div class="carousel">
-            <input type="radio" name="s" id="s1" checked>
-            <input type="radio" name="s" id="s2">
-            <input type="radio" name="s" id="s3">
-            <input type="radio" name="s" id="s4">
-            <div class="slider">
-                <div class="slides">
-                    <figure class="slide">
-                        <img src="./assets/Slide-1.png" alt="Slide 1">
-                        <a href="recipe.html?id=888888" class="btn">Show The Recipe</a>
-                    </figure>
-                    <figure class="slide">
-                        <img src="./assets/Slide-2.png" alt="Slide 2">
-                        <a href="recipe.html?id=664147" class="btn">Show The Recipe</a>
-                    </figure>
-                    <figure class="slide">
-                        <img src="./assets/Slide-3.png" alt="Slide 3">
-                        <a href="recipe.html?id=661340" class="btn">Show The Recipe</a>
-                    </figure>
-                    <figure class="slide">
-                        <img src="./assets/Slide-4.png" alt="Slide 4">
-                        <a href="recipe.html?id=715446" class="btn">Show The Recipe</a>
-                    </figure>
-                </div>
-            </div>
-            <div class="arrows">
-                <label class="arrow left" for="s4" aria-label="Previous">‹</label>
-                <label class="arrow right" for="s2" aria-label="Next">›</label>
-                <label class="arrow left" for="s1" aria-label="Previous">‹</label>
-                <label class="arrow right" for="s3" aria-label="Next">›</label>
-                <label class="arrow left" for="s2" aria-label="Previous">‹</label>
-                <label class="arrow right" for="s4" aria-label="Next">›</label>
-                <label class="arrow left" for="s3" aria-label="Previous">‹</label>
-                <label class="arrow right" for="s1" aria-label="Next">›</label>
-            </div>
-            <div class="dots" role="tablist">
-                <label for="s1" role="tab" aria-label="Go to slide 1"></label>
-                <label for="s2" role="tab" aria-label="Go to slide 2"></label>
-                <label for="s3" role="tab" aria-label="Go to slide 3"></label>
-                <label for="s4" role="tab" aria-label="Go to slide 4"></label>
-            </div>
+      <div class="carousel">
+        <input type="radio" name="s" id="s1" checked />
+        <input type="radio" name="s" id="s2" />
+        <input type="radio" name="s" id="s3" />
+        <input type="radio" name="s" id="s4" />
+        <div class="slider">
+          <div class="slides">
+            <figure class="slide">
+              <img src="./assets/Slide-1.png" alt="Slide 1" />
+              <a href="recipe.html?id=888888" class="btn">Show The Recipe</a>
+            </figure>
+            <figure class="slide">
+              <img src="./assets/Slide-2.png" alt="Slide 2" />
+              <a href="recipe.html?id=664147" class="btn">Show The Recipe</a>
+            </figure>
+            <figure class="slide">
+              <img src="./assets/Slide-3.png" alt="Slide 3" />
+              <a href="recipe.html?id=661340" class="btn">Show The Recipe</a>
+            </figure>
+            <figure class="slide">
+              <img src="./assets/Slide-4.png" alt="Slide 4" />
+              <a href="recipe.html?id=715446" class="btn">Show The Recipe</a>
+            </figure>
+          </div>
         </div>
+        <div class="arrows">
+          <label class="arrow left" for="s4" aria-label="Previous">‹</label>
+          <label class="arrow right" for="s2" aria-label="Next">›</label>
+          <label class="arrow left" for="s1" aria-label="Previous">‹</label>
+          <label class="arrow right" for="s3" aria-label="Next">›</label>
+          <label class="arrow left" for="s2" aria-label="Previous">‹</label>
+          <label class="arrow right" for="s4" aria-label="Next">›</label>
+          <label class="arrow left" for="s3" aria-label="Previous">‹</label>
+          <label class="arrow right" for="s1" aria-label="Next">›</label>
+        </div>
+        <div class="dots" role="tablist">
+          <label for="s1" role="tab" aria-label="Go to slide 1"></label>
+          <label for="s2" role="tab" aria-label="Go to slide 2"></label>
+          <label for="s3" role="tab" aria-label="Go to slide 3"></label>
+          <label for="s4" role="tab" aria-label="Go to slide 4"></label>
+        </div>
+      </div>
     </div>
 
-<!-- <--Featured Recipes-->
+    <!-- Featured Recipes-->
 
     <section class="container">
-        <div class="section-title">
-            <h2>Featured Recipes</h2>
-            <p>Handpicked recipes from our chefs to inspire your next meal</p>
+      <div class="section-title">
+        <h2>Featured Recipes</h2>
+        <p>Handpicked recipes from our chefs to inspire your next meal</p>
+      </div>
+      <div class="recipes-grid">
+        <!-- Recipe Card 1 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/782601-312x231.jpg"
+              alt="Red Kidney Bean Jambalaya"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Vegetarian</span>
+            <h3 class="recipe-title">Red Kidney Bean Jambalaya</h3>
+            <p>
+              A hearty Creole-inspired dish made with red kidney beans, rice,
+              vegetables, and spices — perfect for a comforting dinner.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 45 mins</span>
+              <a href="recipe.html?id=782601" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 6 servings</span>
+            </div>
+          </div>
         </div>
-        <div class="recipes-grid">
-<!-- Recipe Card 1 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/782601-312x231.jpg"
-                        alt="Red Kidney Bean Jambalaya">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Vegetarian</span>
-                    <h3 class="recipe-title">Red Kidney Bean Jambalaya</h3>
-                    <p>A hearty Creole-inspired dish made with red kidney beans, rice, vegetables, and spices — perfect for a comforting
-                    dinner.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 45 mins</span>
-                        <a href="recipe.html?id=782601" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 6 servings</span>
-                    </div>
-                </div>
+        <!-- Recipe Card 2 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/716426-312x231.jpg"
+              alt="Cauliflower, Brown Rice, and Vegetable Fried Rice"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Vegetarian</span>
+            <h3 class="recipe-title">
+              Cauliflower, Brown Rice, and Vegetable Fried Rice
+            </h3>
+            <p>
+              A healthy twist on fried rice featuring cauliflower, brown rice,
+              and colorful vegetables, lightly seasoned and stir-fried.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 30 mins</span>
+              <a href="recipe.html?id=716426" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 8 servings</span>
             </div>
-<!-- Recipe Card 2 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/716426-312x231.jpg"
-                        alt="Cauliflower, Brown Rice, and Vegetable Fried Rice">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Vegetarian</span>
-                    <h3 class="recipe-title">Cauliflower, Brown Rice, and Vegetable Fried Rice</h3>
-                    <p>A healthy twist on fried rice featuring cauliflower, brown rice, and colorful vegetables, lightly seasoned and
-                    stir-fried.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 30 mins</span>
-                        <a href="recipe.html?id=716426" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 8 servings</span>
-                    </div>
-                </div>
-            </div>
-<!-- Recipe Card 3 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/716004-312x231.jpg"
-                        alt="Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Vegan</span>
-                    <h3 class="recipe-title">Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries</h3>
-                    <p>A vibrant and protein-packed salad with quinoa, chickpeas, tangy sun-dried tomatoes, and sweet dried cherries.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 45 mins</span>
-                        <a href="recipe.html?id=716004" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 6 servings</span>
-                    </div>
-                </div>
-            </div>
-<!-- Recipe Card 4 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/716627-312x231.jpg"
-                        alt="Easy Homemade Rice and Beans">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Latin American</span>
-                    <h3 class="recipe-title">Easy Homemade Rice and Beans</h3>
-                    <p>A simple and satisfying dish combining fluffy rice and seasoned beans — a staple in many cuisines.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 35 mins</span>
-                        <a href="recipe.html?id=716627" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
-                    </div>
-                </div>
-            </div>
-<!-- Recipe Card 5 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/644387-312x231.jpg" alt="Perfectly seasoned grilled chicken with a medley of summer vegetables">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Side Dish</span>
-                    <h3 class="recipe-title">Garlicky Kale</h3>
-                    <p>Tender kale sautéed with garlic and olive oil — a quick and nutritious side dish.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 45 mins</span>
-                        <a href="recipe.html?id=644387" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
-                    </div>
-                </div>
-            </div>
-<!-- Recipe Card 6 -->
-            <div class="recipe-card">
-                <div class="recipe-img">
-                    <img src="https://img.spoonacular.com/recipes/715446-312x231.jpg" alt="Slow Cooker Beef Stew">
-                </div>
-                <div class="recipe-info">
-                    <span class="recipe-category">Slow Cooker Meals</span>
-                    <h3 class="recipe-title">Slow Cooker Beef Stew</h3>
-                    <p>A comforting stew made with tender beef, potatoes, carrots, and herbs, slow-cooked to perfection.</p>
-                    <div class="recipe-meta">
-                        <span><i class="far fa-clock"></i> 490 mins</span>
-                        <a href="recipe.html?id=715446" class="recipe-button">View Recipe</a>
-                        <span><i class="fas fa-user-friends"></i> 6 servings</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/716004-312x231.jpg"
+              alt="Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Vegan</span>
+            <h3 class="recipe-title">
+              Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried
+              Cherries
+            </h3>
+            <p>
+              A vibrant and protein-packed salad with quinoa, chickpeas, tangy
+              sun-dried tomatoes, and sweet dried cherries.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 45 mins</span>
+              <a href="recipe.html?id=716004" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 6 servings</span>
+            </div>
+          </div>
+        </div>
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/716627-312x231.jpg"
+              alt="Easy Homemade Rice and Beans"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Latin American</span>
+            <h3 class="recipe-title">Easy Homemade Rice and Beans</h3>
+            <p>
+              A simple and satisfying dish combining fluffy rice and seasoned
+              beans — a staple in many cuisines.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 35 mins</span>
+              <a href="recipe.html?id=716627" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 2 servings</span>
+            </div>
+          </div>
+        </div>
+        <!-- Recipe Card 5 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/644387-312x231.jpg"
+              alt="Perfectly seasoned grilled chicken with a medley of summer vegetables"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Side Dish</span>
+            <h3 class="recipe-title">Garlicky Kale</h3>
+            <p>
+              Tender kale sautéed with garlic and olive oil — a quick and
+              nutritious side dish.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 45 mins</span>
+              <a href="recipe.html?id=644387" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 2 servings</span>
+            </div>
+          </div>
+        </div>
+        <!-- Recipe Card 6 -->
+        <div class="recipe-card">
+          <div class="recipe-img">
+            <img
+              src="https://img.spoonacular.com/recipes/715446-312x231.jpg"
+              alt="Slow Cooker Beef Stew"
+            />
+          </div>
+          <div class="recipe-info">
+            <span class="recipe-category">Slow Cooker Meals</span>
+            <h3 class="recipe-title">Slow Cooker Beef Stew</h3>
+            <p>
+              A comforting stew made with tender beef, potatoes, carrots, and
+              herbs, slow-cooked to perfection.
+            </p>
+            <div class="recipe-meta">
+              <span><i class="far fa-clock"></i> 490 mins</span>
+              <a href="recipe.html?id=715446" class="recipe-button"
+                >View Recipe</a
+              >
+              <span><i class="fas fa-user-friends"></i> 6 servings</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-<!-- <--Footer-->    
+    <!-- Footer-->
 
     <footer id="Info">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>About Us</h3>
-                    <p>ratatouille is your go-to resource for delicious recipes, cooking techniques, and food inspiration.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                   <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
-                        <li><a href="#Info">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>Email: info@ratatouille.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Address: 123 Recipe St, Foodville</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              ratatouille is your go-to resource for delicious recipes, cooking
+              techniques, and food inspiration.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.pinterest.com/"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="https://www.youtube.com"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ratatouille. All rights reserved.</p>
-            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="#Info">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: info@ratatouille.com</li>
+              <li>Phone: (123) 456-7890</li>
+              <li>Address: 123 Recipe St, Foodville</li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ratatouille. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/97014d0cd4.js" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://kit.fontawesome.com/97014d0cd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/header.js"></script>
+  </body>
 </html>

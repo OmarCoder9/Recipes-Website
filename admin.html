@@ -9,32 +9,41 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/admin.css" />
-    <link rel="stylesheet" href="./styles/headerAndFooter.css">
+    <link rel="stylesheet" href="./styles/headerAndFooter.css" />
     <link rel="icon" href="./assets/logo.png" type="image/png" />
   </head>
   <body>
-
-    <!-- <--NavBar-->
+    <!--NavBar-->
 
     <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo"><img src="./assets/logo.png" alt="logo"></a>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="recipes.html"><i class="fa-solid fa-utensils"></i> Recipes</a></li>
-                    <li id=""><a href="#Info"><i class="fa-solid fa-info"></i> Info</a></li>
-                </ul>
-                <ul class="login">
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="signup.html">Register</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <a href="/index.html" class="logo"
+            ><img src="./assets/logo.png" alt="logo"
+          /></a>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="/recipes.html"
+                ><i class="fa-solid fa-utensils"></i> Recipes</a
+              >
+            </li>
+            <li id="">
+              <a href="#Info"><i class="fa-solid fa-info"></i> Info</a>
+            </li>
+            <li id="login-link"><a href="login.html">Log In</a></li>
+            <li id="signup-link"><a href="signup.html">Register</a></li>
+            <li id="admin-link"><a href="admin.html">Admin</a></li>
+            <li id="logout-link"><a href="logout.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="container py-5">
       <h1 class="mb-4 text-center">🍳 Recipe Admin Panel</h1>
@@ -155,62 +164,79 @@
             placeholder="🔍 Search recipes by title..."
           />
         </div>
-        <table class="table table-hover text-center align-middle">
-          <thead class="table-dark">
-            <tr>
-              <th>Image</th>
-              <th>Title</th>
-              <th>Time</th>
-              <th>Servings</th>
-              <th>Vegetarian</th>
-              <th>Vegan</th>
-              <th>Health Score</th>
-              <th>Likes</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody id="recipeTable"></tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="table table-hover text-center align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Time</th>
+                <th>Servings</th>
+                <th>Vegetarian</th>
+                <th>Vegan</th>
+                <th>Health Score</th>
+                <th>Likes</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="recipeTable"></tbody>
+          </table>
+        </div>
       </div>
     </div>
 
-    <!-- <--Footer-->    
+    <!--Footer-->
     <footer id="Info">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>About Us</h3>
-                    <p>ratatouille is your go-to resource for delicious recipes, cooking techniques, and food inspiration.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
-                        <li><a href="#Info">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>Email: info@ratatouille.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Address: 123 Recipe St, Foodville</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              ratatouille is your go-to resource for delicious recipes, cooking
+              techniques, and food inspiration.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.pinterest.com/"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="https://www.youtube.com"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ratatouille. All rights reserved.</p>
-            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="#Info">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: info@ratatouille.com</li>
+              <li>Phone: (123) 456-7890</li>
+              <li>Address: 123 Recipe St, Foodville</li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ratatouille. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <script src="./scripts/admin.js"></script>
-    <script src="https://kit.fontawesome.com/97014d0cd4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/97014d0cd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/header.js"></script>
   </body>
 </html>
