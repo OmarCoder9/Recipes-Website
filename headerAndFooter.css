@@ -1,0 +1,219 @@
+/* <------------------------------NavBar------------------------------> */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.logo img {
+  height: 80px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 30px;
+  transition: transform 1s ease;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+.nav-links li:hover {
+  color: #e1d6ae;
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+.nav-links a:hover {
+  /* color: #e1d6ae; */
+  color: rgba(225, 214, 174, 0.7);
+}
+.login {
+  display: flex;
+  list-style: none;
+  margin-left: 160px;
+}
+.login li {
+  margin-left: 30px;
+  transition: transform 1s ease;
+}
+.login a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+.login li:hover {
+  color: #e1d6ae;
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+.login a:hover {
+  color: #e1d6ae;
+}
+
+/* <------------------------------Responsive NavBar------------------------------> */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .login {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .login li {
+    margin: 10px 0;
+  }
+}
+/* <------------------------------Footer------------------------------> */
+
+footer {
+  background: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: #e1d6ae;
+}
+.footer-column ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-column p {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+  color: #e1d6ae;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #444;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  background: #e1d6ae;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* <------------------------------Responsive Footer------------------------------> */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .slider {
+    height: 400px;
+  }
+  .slide-content {
+    padding: 60px 15% 40px;
+  }
+  .slide-content h2 {
+    font-size: 28px;
+  }
+  .slide-content p {
+    font-size: 16px;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 30px;
+    margin: 5px 0;
+  }
+}
