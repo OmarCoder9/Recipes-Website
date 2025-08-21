@@ -7,9 +7,6 @@
   padding: 20px 0;
 }
 
-.back-link:hover {
-  text-decoration: underline;
-}
 .recipe-header {
   display: grid;
   grid-template-columns: 1fr 1fr;

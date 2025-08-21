@@ -2,7 +2,6 @@ let recipes = [];
 let userRecipes = [];
 let editIndex = null;
 
-// Load recipes from JSON + localStorage
 async function loadRecipes() {
   try {
     const res = await fetch("recipes.json");
